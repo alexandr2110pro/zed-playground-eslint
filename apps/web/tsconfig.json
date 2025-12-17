@@ -15,15 +15,15 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next",
-      },
+        "name": "next"
+      }
     ],
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./*"]
     },
     "types": ["jest", "node"],
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "."
   },
   "include": [
     "app/**/*.ts",
@@ -36,7 +36,7 @@
     "components/**/*.jsx",
     "../../apps/web/.next/types/**/*.ts",
     "../../dist/apps/web/.next/types/**/*.ts",
-    "next-env.d.ts",
+    "next-env.d.ts"
   ],
   "exclude": [
     "out-tsc",
@@ -55,17 +55,17 @@
     ".next",
     "eslint.config.js",
     "eslint.config.cjs",
-    "eslint.config.mjs",
+    "eslint.config.mjs"
   ],
   "references": [
     {
-      "path": "../../packages/foo/dto",
+      "path": "../../packages/foo/dto"
     },
     {
-      "path": "../../packages/foo/ui",
+      "path": "../../packages/foo/ui"
     },
     {
-      "path": "../../packages/foo/dal",
-    },
-  ],
+      "path": "../../packages/foo/dal"
+    }
+  ]
 }

@@ -9,6 +9,7 @@ export function InAppComponent() {
     () => {
       console.log('Count updated: ', count);
     },
+
     // we have an error here - good
     [],
   );

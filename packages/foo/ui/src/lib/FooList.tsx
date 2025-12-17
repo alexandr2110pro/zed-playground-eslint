@@ -13,11 +13,11 @@ export function FooList({ data }: { data: FooDto[] }) {
 
   useEffect(
     () => {
-      // should report react-hooks/set-state-in-effect
+      // error react-hooks/set-state-in-effect
       setLocal(data);
     },
 
-    // this should report missing dependency
+    // missing dependency error
     [],
   );
 

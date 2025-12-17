@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => ({
-  root: import.meta.dirname,
+  root: __dirname,
   cacheDir: '../../../node_modules/.vite/packages/foo/dto',
   plugins: [],
   // Uncomment this if you are using workers.

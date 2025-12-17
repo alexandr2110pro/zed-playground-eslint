@@ -7,6 +7,10 @@ typescript and eslint configuration files and associated DX (autoimport, autocom
 See comments in the ts and tsx code for additional specific notes on expected behavior.
 Some of them are satisfied, some are not.
 
+## Convenience package.json scripts
+
+- `lint-all`: `nx run-many -t lint --skip-nx-cache --outputStyle=static`
+
 ## Expected Behavior
 
 - Typescript projects should be properly discovered and their exported members should be autocompletable and autoimportable

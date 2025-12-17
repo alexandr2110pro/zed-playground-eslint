@@ -2,16 +2,7 @@
   "name": "@org/web",
   "version": "0.0.1",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "next": "~16.0.1",
-    "react": "^19.0.0",
-    "@nx/eslint-plugin": "22.2.5",
-    "@nx/next": "22.2.5",
-    "@testing-library/react": "16.3.0",
-    "eslint-config-next": "^16.0.10",
-    "eslint": "^9.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@org/foo-ui": "workspace:*",
     "@org/foo-dto": "workspace:*",

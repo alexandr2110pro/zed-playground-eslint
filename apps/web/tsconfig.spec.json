@@ -5,7 +5,7 @@
     "jsx": "preserve",
     "types": ["jest", "node"],
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler"
   },
   "include": [
     "jest.config.ts",
@@ -18,11 +18,11 @@
     "src/**/*.spec.js",
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
-    "src/**/*.d.ts",
+    "src/**/*.d.ts"
   ],
   "references": [
     {
-      "path": "./tsconfig.json",
-    },
-  ],
+      "path": "./tsconfig.json"
+    }
+  ]
 }

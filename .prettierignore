@@ -1,5 +1,14 @@
 # Add files here to ignore them from prettier formatting
 /dist
+.next
+.cursor
+.zed
+.vscode
+.github
 /coverage
 /.nx/cache
 /.nx/workspace-data
+
+
+README.md
+pnpm-lock.yaml
