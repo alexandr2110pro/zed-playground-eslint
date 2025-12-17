@@ -66,7 +66,7 @@ see [settings.json](./.zed/settings.json)
       "settings": {
         "workingDirectory": {
           // "mode": "location"
-          "mode": "location"
+          "mode": "auto"
         },
         // workingDirectories: "location"
         // workingDirectories: ["./*"]
