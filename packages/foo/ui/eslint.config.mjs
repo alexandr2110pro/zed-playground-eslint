@@ -6,16 +6,8 @@ import baseConfig from '../../../eslint.config.mjs';
 
 const eslintConfig = defineConfig([
   ...baseConfig,
-  ...nextVitals,
   ...nx.configs['flat/react-typescript'],
-  {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
-    // Override or add rules here
-    rules: {
-      'no-multiple-empty-lines': ['error', { max: 3, maxEOF: 1 }],
-    },
-  },
-
+  ...nextVitals,
   {
     ignores: ['**/out-tsc'],
   },

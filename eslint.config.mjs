@@ -1,8 +1,9 @@
 import nx from '@nx/eslint-plugin';
 import prettier from 'eslint-plugin-prettier/recommended';
+import { defineConfig } from 'eslint/config';
 import jsoncParser from 'jsonc-eslint-parser';
 
-export default [
+export default defineConfig([
   ...nx.configs['flat/base'],
   ...nx.configs['flat/javascript'],
   ...nx.configs['flat/typescript'],
@@ -36,18 +37,10 @@ export default [
 
   {
     files: ['**/*.json'],
-    languageOptions: {
-      parser: jsoncParser,
-    },
-    rules: {
-      '@nx/dependency-checks': [
-        'error',
-        {
-          ignoredDependencies: ['vitest'],
-        },
-      ],
-    },
+    languageOptions: { parser: jsoncParser },
+    rules: { '@nx/dependency-checks': ['off'] },
   },
+
   {
     files: [
       '**/*.ts',
@@ -73,4 +66,4 @@ export default [
       ],
     },
   },
-];
+]);

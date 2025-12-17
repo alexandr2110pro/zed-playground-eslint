@@ -6,8 +6,9 @@ import baseConfig from '../../eslint.config.mjs';
 
 const eslintConfig = defineConfig([
   ...baseConfig,
-  ...nextVitals,
   ...nx.configs['flat/react-typescript'],
+  ...nextVitals,
+
   globalIgnores([
     // Default ignores of eslint-config-next:
     '.next/**',
