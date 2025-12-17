@@ -1,2 +1,8 @@
 packages:
-  - 'packages/*'
+  - packages/*
+  - apps/*
+  - packages/foo/*
+
+onlyBuiltDependencies:
+  - nx
+  - unrs-resolver
